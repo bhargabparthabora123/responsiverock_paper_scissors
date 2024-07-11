@@ -17,6 +17,7 @@ h1{
   font-family: "Lilita One", sans-serif;
   font-weight: 200;
   font-size: 3rem;
+  width: 100vw;
     background-color:#03045e;
     color:#fff;
     text-align: center;
@@ -37,6 +38,7 @@ h1:hover{
     justify-content: center;
     align-items: center;
     gap: 6rem;
+    flex-wrap: wrap;
 }
 
 .choice {
@@ -121,3 +123,77 @@ background-color: #007bff;
   padding: 1rem;
   border-radius: 1rem;
 }
+
+@media (max-width:960px){
+  .choices{
+    flex-direction: column;
+  }
+
+
+}
+@media (max-width: 650px) {
+    h1 {
+      height:12rem;
+      line-height:4  ;
+    }
+    .choices{
+        gap:1rem;
+    }
+    .choice {
+        height: 100px;
+        width: 100px;
+    
+    }
+
+    .choice img{
+        height: 60px;
+        width: 60px;
+     
+    }
+
+    .choice img:hover{
+    
+        width: 90px;
+        height: 90px;
+    }
+
+  
+    #user-score,
+    #comp-score {
+      font-size: 2rem;
+      
+    }
+    
+.score>p{
+    
+font-size:1.5rem;
+}
+
+  }
+  
+  @media (max-width: 400px) {
+    h1 {
+      height:22rem;
+      line-height:4  ;
+    }
+.score-board{
+    margin-top: 1.5rem;
+}
+
+    .msg-container {
+        margin-top: 1.5rem;
+        text-align: center;
+      }
+      
+      #msg {
+          font-family: "Lilita One", sans-serif; 
+        background-color: #081b31;
+        color: #fff;
+        font-size: 1.2rem;
+        display: inline;
+        padding: .6rem;
+        
+        border-radius: 1rem;
+      }
+
+  }

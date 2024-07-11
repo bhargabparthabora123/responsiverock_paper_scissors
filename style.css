@@ -197,3 +197,59 @@ font-size:1.5rem;
       }
 
   }
+
+
+  @media(max-height:500px){
+    .choices{
+        flex-direction: row;
+      }
+
+      .choice {
+        height: 100px;
+        width: 100px;
+    
+    
+    }
+
+    .choice img{
+        height: 60px;
+        width: 60px;
+     
+    }
+
+    .choice img:hover{
+    
+        width: 90px;
+        height: 90px;
+    }
+    .score-board{
+        margin-top: 1.5rem;
+    }
+    
+    #user-score,
+    #comp-score {
+      font-size: 2rem;
+      
+    }
+    .score>p{
+    
+        font-size:1.5rem;
+        }
+      
+        .msg-container {
+            margin-top: 1.5rem;
+            text-align: center;
+          }
+          #msg {
+            font-family: "Lilita One", sans-serif; 
+          background-color: #081b31;
+          color: #fff;
+          font-size: 1.2rem;
+          display: inline;
+          padding: .6rem;
+          
+          border-radius: 1rem;
+        }
+  
+          
+  }
